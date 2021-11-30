@@ -18,7 +18,6 @@ class Options:
         parser.add_argument('--model', type=str, default='deeplabv2', help='which model to use, e.g. (deeplabv2|deeplabv3)')
         parser.add_argument('--multi_level', type=bool, default=True, help='extract features at multiple levels of the model')
         parser.add_argument('--restore_from', type=str, default='./models/pretrained_models/DeepLab_resnet_pretrained_init.pth')
-        parser.add_argument('--ft', type=str, default=None, help='Restore model path to finetune on')
         parser.add_argument('--num_shots', default=1, type=int, help='# shot for the experiment')
 
         # for training
@@ -35,7 +34,7 @@ class Options:
         # input/output sizes
         parser.add_argument('--batch_size', type=int, default=4, help='training batch size')
         parser.add_argument('--batch_size_val', type=int, default=2, help='validation batch size')
-        parser.add_argument('--crop_size', type=tuple, default=(1024, 512), help='Crop to the width of crop_size')
+        parser.add_argument('--crop_size', type=tuple, default=(512, 256), help='Crop to the width of crop_size')
         parser.add_argument('--num_workers', default=8, type=int, help='#threads for loading data')
 
         # for dataset
@@ -122,8 +121,6 @@ class Options:
         opt.early_stop = int(opt.early_stop / opt.batch_size)
         opt.seg_lr = opt.seg_lr * opt.batch_size
         opt.d_lr = opt.d_lr * opt.batch_size
-
-        opt.th = str(opt.threshold).replace(".", "")
 
         # print and save options
         self.print_options(opt)

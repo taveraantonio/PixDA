@@ -60,7 +60,7 @@ def train_pixda(args, model, model_d, model_d2, source_train_loader, target_trai
     else:
         criterion_seg = CrossEntropy2d(ignore_label=args.ignore_index)
     criterion_d = BCEWithLogitsLoss()
-    criterion_d1 = PixAdvLoss(args=args, ignore_index=args.ignore_index, ablation=args.ablation)
+    criterion_d1 = PixAdvLoss(args=args, ignore_index=args.ignore_index)
 
     # Resume model if continuing training
     if args.continue_train:
@@ -311,7 +311,7 @@ def sample_selection(args, model, model_d2, source_train_loader, target_train_lo
     dataset_instance = find_dataset_using_name(args.source_dataset)
     source_dataset = dataset_instance(args=args,
                                       root=args.source_dataroot,
-                                      mean=args.mean_prep,
+                                      mean=args.mean_pre,
                                       crop_size=args.crop_size,
                                       train=args.is_train,
                                       ignore_index=args.ignore_index,

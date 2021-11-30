@@ -92,7 +92,7 @@ def main():
         dataset_instance = find_dataset_using_name(args.source_dataset)
         source_dataset = dataset_instance(args=args,
                                           root=args.source_dataroot,
-                                          mean=args.mean_prep,
+                                          mean=args.mean_pre,
                                           crop_size=args.crop_size,
                                           train=args.is_train,
                                           ignore_index=args.ignore_index)
@@ -106,7 +106,7 @@ def main():
         # Define target train loader
         dataset_instance = find_dataset_using_name(args.target_dataset)
         target_dataset = dataset_instance(root=args.target_dataroot,
-                                          mean=args.mean_prep,
+                                          mean=args.mean_pre,
                                           crop_size=args.crop_size,
                                           train=args.is_train,
                                           max_iters=args.max_iters*args.batch_size,
