@@ -41,7 +41,7 @@ def save_model(args, model, optimizer, scheduler, iter_counter):
 
 def load_model(args, model, optimizer=None, scheduler=None, so=False):
     if so:
-        source_only_path = f"./pretrained_models/{args.source_dataset}_source_only_model_30000.pth"
+        source_only_path = f".models/pretrained_models/{args.source_dataset}_source_only_model.pth"
         print(f'Resuming Model at: {source_only_path}')
         checkpoint = torch.load(source_only_path)
         model.load_state_dict(checkpoint['model_state'])

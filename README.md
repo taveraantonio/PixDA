@@ -34,7 +34,7 @@ To run it, simpy use the following command:
 > python run.py --source_dataset \<source_dataset\> --source_dataroot \<source_data_folder\> --target_dataset \<target_dataset\> --target_dataroot \<target_data_folder\> --name \<exp_name\> --gpu_ids 0,1 --is_train --num_shots \<1/2/3/4/5\>
 
 Leaving all the default parameters in the config.py file, you can replicate the experiments of the paper.
-Pretrained backbone and source only models for GTA5 and SYNTHIA can be found here (just copy the "pretrained" folder inside the main folder of the repository: [link](). 
+Pretrained backbone and source only models for GTA5 and SYNTHIA can be found here (just unzip and copy the "pretrained_models" folder inside the models folder of the repository: [link](https://drive.google.com/file/d/11ueJ2uKlu9LZo_3wxuTWJds12zqjNNU-/view?usp=sharing). 
 
 #### Training Commands
 
