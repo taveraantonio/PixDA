@@ -34,7 +34,7 @@ class Options:
         # input/output sizes
         parser.add_argument('--batch_size', type=int, default=4, help='training batch size')
         parser.add_argument('--batch_size_val', type=int, default=2, help='validation batch size')
-        parser.add_argument('--crop_size', type=tuple, default=(512, 256), help='Crop to the width of crop_size')
+        parser.add_argument('--crop_size', type=tuple, default=(1024, 512), help='Crop to the width of crop_size')
         parser.add_argument('--num_workers', default=8, type=int, help='#threads for loading data')
 
         # for dataset
