@@ -51,10 +51,11 @@ Testing:
 ## Cite us
 If you use this repository, please consider to cite us:
 
-       @inProceedings{tavera2022pixel,
-       author = {Tavera, Antonio and Cermelli, Fabio and Masone, Carlo and Caputo, Barbara},
-       title  = {Pixel-by-Pixel Cross-Domain Alignment for Few-Shot Semantic Segmentation},
-       booktitle = {Winter Conference on Applications of Computer Vision (WACV)},
-       year      = {2022},
-       month     = {January}
-       }
+    @InProceedings{Tavera_2022_WACV,
+    author    = {Tavera, Antonio and Cermelli, Fabio and Masone, Carlo and Caputo, Barbara},
+    title     = {Pixel-by-Pixel Cross-Domain Alignment for Few-Shot Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2022},
+    pages     = {1626-1635}}
+
