@@ -2,7 +2,12 @@
 This is the official PyTorch implementation of our work: "Pixel-by-Pixel Cross-Domain Alignment for Few-Shot Semantic Segmentation" accepted at WACV 2022.
 
 In this paper we consider the task of semantic segmentation in autonomous driving applications. Specifically, we consider the cross-domain few-shot setting where training can use only few real-world annotated images and many annotated synthetic images. In this context, aligning the domains is made more challenging by the pixel-wise class imbalance that is intrinsic in the segmentation and that leads to ignoring the underrepresented classes and overfitting the well represented ones. We address this problem with a novel framework called Pixel-By-Pixel Cross-Domain Alignment (PixDA).
-Read the paper: [link](https://openaccess.thecvf.com/content/WACV2022/html/Tavera_Pixel-by-Pixel_Cross-Domain_Alignment_for_Few-Shot_Semantic_Segmentation_WACV_2022_paper.html)
+
+
+[[Paper]](https://openaccess.thecvf.com/content/WACV2022/papers/Tavera_Pixel-by-Pixel_Cross-Domain_Alignment_for_Few-Shot_Semantic_Segmentation_WACV_2022_paper.pdf)
+[[Supplementary]](https://openaccess.thecvf.com/content/WACV2022/supplemental/Tavera_Pixel-by-Pixel_Cross-Domain_Alignment_WACV_2022_supplemental.pdf)
+[[ArXiV]](https://arxiv.org/abs/2110.11650)
+
 
 ![teaser](https://raw.githubusercontent.com/taveraantonio/PixDA/master/method.png)
 
